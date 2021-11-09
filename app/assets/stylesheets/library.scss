@@ -1,0 +1,47 @@
+$navbar_height: 55px;
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+.navbar-brand .nav-link .this-this-font {
+    font-family: 'Bitter', serif;
+}
+
+.bg-custom {
+    background-color: #0091AD;
+}
+
+.navbar {
+    height: $navbar_height;
+}
+
+.main-content {
+    margin-top: $navbar_height;
+}
+
+.search-img {
+    width: 28px;
+}
+
+.table-head {
+    border-bottom: 1px solid #ADADAD;
+}
+
+.container-special {
+    max-width: 750px;
+    margin-top: 25vh;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+.tool_nav a {
+    transition: all 0.3s ease 0s;
+    color: rgb(88, 99, 88);
+}
+
+.tool_nav a:hover {
+    color: black;
+}

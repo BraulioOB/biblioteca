@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top shadow-sm">
+    <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Library</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <%= link_to "Estantería", root_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to "Préstamos", books_path(:f=>"false"), class: "nav-link" %>
+        </li>
+        </ul>
+
+        <%= search_form_for @q do |f| %>
+            <div class="d-flex">
+                <%= f.text_field :title_cont, class: "form-control me-1 rounded-1" %>
+                <%= f.submit "Buscar", class: "btn btn-light rounded-1" %>
+            </div>
+        <% end %>
+        
+    </div>
+    </div>
+</nav>
